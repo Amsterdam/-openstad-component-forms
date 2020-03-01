@@ -5,7 +5,7 @@ class Slider extends React.Component {
     super(props)
     this.state = {
       value: this.props.value,
-      touched: false
+      touched: this.props.touched || false,
     }
     this.handleChange = this.handleChange.bind(this)
   }
